@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <?php $this->load->view('global/head'); ?>
-  </head>
-  <body class="skin-blue">
-    <div class="login-box">
-      <div class="login-logo">
-        <a href=""><b>Woolha</b>Backend</a>
-      </div>
-      <div class="login-box-body">
-        <form action="" method="post">
-          <div class="form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Username"/>
-            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password"/>
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
-          <div class="row">
-            <div class="col-xs-8">    
-             
-            </div><!-- /.col -->
-            <div class="col-xs-4">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-            </div><!-- /.col -->
-          </div>
-        </form>
-      </div>
-    </div>
-      <?php $this->load->view('global/footer'); ?>
-  </body>
+    <head>
+        <title>Administrator Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>asset/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>asset/css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>asset/css/themes.css">
+    </head>
+    <body>
+        <div class="container">
+          <?php $this->load->view('login_content'); ?>
+        </div>
+    </body>
+        
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="<?php echo base_url(); ?>asset/js/bootstrap.min.js"></script>
 </html>

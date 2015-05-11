@@ -38,8 +38,11 @@
 |
 */
 
-$route['default_controller'] = "Main";
+$route['default_controller'] = "Login";
 $route['404_override'] = '';
+
+$route['dashboard'] = "main";
+$route['logout'] = "main/logout";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <?php $this->load->view('global/head'); ?>
-  </head>
-  <body class="skin-blue">
-    <div class="wrapper">
-      <?php $this->load->view('global/headermenu'); ?>
-      <?php $this->load->view('global/sidebar'); ?>
-      <div class="content-wrapper">
-        <section class="content-header">
-          <h1>
-            Post
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Post</li>
-          </ol>
-        </section>
-
-        <!-- Main content -->
-        <section class="content">
-        <?php //$this->load->view('content/post_all_view') ?>
-        <?php $this->load->view('content/post_input_view') ?>
-        </section>
-      </div>
-    </div>
-      <?php $this->load->view('global/footer'); ?>
-      <script type="text/javascript">
-      $(function () {
-        $(".textarea").wysihtml5();
-        $('#postTable').dataTable({
-          "bPaginate": true,
-          "bLengthChange": false,
-          "bFilter": false,
-          "bSort": true,
-          "bInfo": true,
-          "bAutoWidth": false
-        });
-      });
-    
-      </script>
-  </body>
+    <head>
+        <?php $this->load->view('global/head'); ?>
+    </head>
+    <body>
+    <!-- navigation UP -->
+        <nav class="navbar navbar-fixed-top nav-bar-head">
+            <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand brand-color-head" href="#">
+                Admin Website
+              </a>
+            </div>
+          </div>
+        </nav>
+    <!-- End Navigation Up  -->
+        <div class="container-fluid content-main">
+            <div class="row">
+                <div class="col-md-3"><?php $this->load->view('global/sidebar'); ?></div>
+                <div class="col-md-9">
+                    <div class="main-content">
+                    <?php $this->load->view('post_content'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <?php $this->load->view('global/footer'); ?>
 </html>

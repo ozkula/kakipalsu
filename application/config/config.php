@@ -9,7 +9,6 @@
 | WITH a trailing slash:
 |
 |	http://example.com/
-
 |
 | If this is not set then CodeIgniter will guess the protocol, domain and
 | path to your installation.
@@ -26,13 +25,8 @@ $config['base_url']	= '';
 | something else. If you are using mod_rewrite to remove the page set this
 | variable so that it is blank.
 |
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /kakipalsu/index.php/$1 [L]  
-|
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -230,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'rozaq.in';
 
 /*
 |--------------------------------------------------------------------------
